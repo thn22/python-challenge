@@ -22,8 +22,8 @@ with open(csvpath) as csvfile:
         Profits.append(int(row[1]))
 
     #Create variables to hold total months and total profits calculations
-    TotalMonths= len(Months)
-    TotalProfit= sum(Profits)
+    TotalMonths = len(Months)
+    TotalProfit = sum(Profits)
 
     #use loop to run through each row (-1 to offset starting at 0)
     for i in range(len(Profits)-1):
@@ -32,7 +32,7 @@ with open(csvpath) as csvfile:
         MonthlyChange.append(Profits[i+1]-Profits[i])
     
     #Create variable to hold average change calculation
-    AverageChange= (sum(MonthlyChange))/(len(MonthlyChange))
+    AverageChange = (sum(MonthlyChange))/(len(MonthlyChange))
 
 
 #use min and max to select most and least profitable months
